@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Login.css";
-import SignupComponent from "../components/SignupComponent";
-import LoginComponent from "../components/LoginComponent";
+//import SignupComponent from "../components/SignupComponent";
+//import LoginComponent from "../components/LoginComponent";
 import { Link } from 'react-router-dom';
 
 
