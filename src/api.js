@@ -15,20 +15,20 @@ function api() {
   }, []);
 
   async function fetchEvents() {
-    const apiData = await API.graphql({ query: listNotes });
-    setNotes(apiData.data.listEvents.items);
+    const apiData = await API.graphql({ query: listEvents });
+    setEvents(apiData.data.listEvents.items);
   }
 
   async function createEvent() {
     if (!formData.time || !formData.location || !formData.video || !formData.type) return;
     await API.graphql({ query: createEventMutation, variables: { input: formData } });
-    setNotes([ ...events, formData ]);
+    setEvents([ ...events, formData ]);
     setFormData(initialFormState);
   }
 
   async function deleteEvent({ id }) {
     const newEventsArray = events.filter(event => event.id !== id);
-    setEventses(newEventsArray);
+    setEvents(newEventsArray);
     await API.graphql({ query: deleteEventMutation, variables: { input: { id } }});
   }
 
