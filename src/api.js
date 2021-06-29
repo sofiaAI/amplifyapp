@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { API } from 'aws-amplify';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import Amplify, { Auth } from 'aws-amplify';
+import awsconfig from './aws-exports';
 import { listEvents } from './graphql/queries';
 import { createEvent as createEventMutation, deleteEvent as deleteEventMutation } from './graphql/mutations';
+
+
+Amplify.configure(awsconfig);
+Auth.configure(awsconfig);
 
 const initialFormState = { time: '', location: '' , video: '' , type: ''}
 
