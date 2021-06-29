@@ -6,7 +6,7 @@ import { createEvent as createEventMutation, deleteEvent as deleteEventMutation 
 
 const initialFormState = { time: '', location: '' , video: '' , type: ''}
 
-function api() {
+function Api() {
   const [events, setEvents] = useState([]);
   const [formData, setFormData] = useState(initialFormState);
 
@@ -73,4 +73,4 @@ function api() {
   );
 }
 
-export default withAuthenticator(api);
+export default withAuthenticator(Api);
