@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Login from "./pages/Login.js";
 import Home from "./pages/Home.js";
+import api from "./api.js";
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +20,7 @@ class App extends Component {
       <Router>
           <Switch>
               <Route exact path="/" component={Login}/>
+              <Route exact path="/api" component={api}/>
               <Route exact path="/home" component={Home}/>
           </Switch>
       </Router>

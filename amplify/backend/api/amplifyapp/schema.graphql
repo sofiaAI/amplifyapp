@@ -1,0 +1,13 @@
+type EventList @model {
+  id: ID!
+  name: String!
+  events: [Event] @connection(keyName: "byEvent", fields: ["id"])
+}
+
+type Event @model @key(name: "byEvent", fields: ["id"]) {
+  id: ID!
+  time: String!
+  location: String!
+  video: String!
+  type: String!
+}
