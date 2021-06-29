@@ -13,8 +13,8 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <SignupComponent />
-        <LoginComponent />
+        //<SignupComponent />
+        //<LoginComponent />
         <div>
         <p>Navigate to home</p>
         <ul>
