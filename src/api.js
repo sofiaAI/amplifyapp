@@ -42,7 +42,7 @@ function Api() {
     <div className="api">
       <h1>API CONNECTION</h1>
       <input
-        onChange={e => setFormData({ ...formData, 'name': e.target.value})}
+        onChange={e => setFormData({ ...formData, 'time': e.target.value})}
         placeholder="Event time"
         value={formData.time}
       />
