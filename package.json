@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "@aws-amplify/ui-react": "^1.2.4",
-    "aws-amplify": "^4.1.2"
+    "aws-amplify": "^4.1.2",
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
