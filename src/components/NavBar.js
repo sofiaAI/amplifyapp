@@ -1,7 +1,18 @@
 import React, { Component } from "react";
 import { AmplifySignOut } from '@aws-amplify/ui-react';
-
+import Amplify, { Auth } from 'aws-amplify';
 import "./NavBar.css";
+import awsconfig from '../aws-exports';
+
+Auth.configure(awsconfig);
+
+async function signOut() {
+    try {
+        await Auth.signOut();
+    } catch (error) {
+        console.log('error signing out: ', error);
+    }
+}
 
 /**
  * The navigation bar at the top of all pages. Takes no props.
@@ -15,7 +26,7 @@ class NavBar extends Component {
     return (
       <nav className="NavBar-container">
         <div className="NavBar-linkContainer u-inlineBlock">
-          <AmplifySignOut />
+          <button onClick = {signOut}>OUT</button>
         </div>
       </nav>
     );

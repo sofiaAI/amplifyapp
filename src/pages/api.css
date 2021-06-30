@@ -1,11 +1,11 @@
 
 .events-container{
+  float: right;
   height: 50%;
-  width: 400px;
+  width: 25%;
   overflow: auto;
   background-color: transparent;
-  padding: 0px;
   position: absolute;
-  top: 7%;
-  right: 3px;
+  top: 6.5%;
+  right: 0;
 }

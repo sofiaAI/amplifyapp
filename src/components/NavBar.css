@@ -14,10 +14,8 @@
 }
 
 .NavBar-linkContainer {
-  position: relative;
-  width: 10%;
-  margin-right: 30px;
-  right: 0px;
+  width: 150px;
+  float: right;
 }
 
 .NavBar-link,
