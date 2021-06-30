@@ -2,6 +2,7 @@
   background-color: rgb(26, 52, 94);
   position: relative;
   display: flex;
+  height: 10vw;
   flex-direction: row;
   border-radius: 4px;
   box-shadow: 0px 0px 3px 0px #1f1f1f;

@@ -5,6 +5,8 @@
   right: 0px;
   position: absolute;
   width: 100%;
+  height: 7vh;
+  margin-top: 2px;
   background-color: #15132396;
 }
 
@@ -13,8 +15,13 @@
   font-size: 20px;
 }
 
+.logOut {
+  width: 10vw;
+}
+
+
 .NavBar-linkContainer {
-  width: 150px;
+  width: fit-content;
   float: right;
 }
 

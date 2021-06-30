@@ -4,6 +4,7 @@ import Amplify, { Auth } from 'aws-amplify';
 import "./NavBar.css";
 import awsconfig from '../aws-exports';
 
+Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
 async function signOut() {
