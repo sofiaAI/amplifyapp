@@ -1,0 +1,9 @@
+
+.events-container{
+  float: right;
+  height:50%;
+  width:25%;
+  overflow:'auto';
+  background-color: transparent;
+  padding:10 + 'px';
+}

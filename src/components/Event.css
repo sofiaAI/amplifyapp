@@ -1,0 +1,24 @@
+.single-event{
+  background-color: rgb(26, 52, 94);
+}
+
+.time{
+  color:white;
+}
+
+.location{
+  color:white;
+}
+.video{
+  background-color: white;
+  height:30%;
+  width:30%;
+  position: absolute;
+  top: 50%; left: 5%;
+  transform: translate(-50%,-50%);
+}
+
+.type{
+  font-weight: bold;
+  color: rgb(73, 123, 204);
+}
