@@ -17,11 +17,12 @@ async function signOut() {
     }
 }
 
+const [isLoggedIn, setIsLoggedIn] = useState(true);
+
 /**
  * The navigation bar at the top of all pages. Takes no props.
  */
 class NavBar extends Component {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   constructor(props) {
     super(props);
