@@ -27,6 +27,7 @@ class NavBar extends Component {
           console.log('error signing out: ', error);
       }
       this.isLoggedIn = false;
+      render();
   }
 
   render() {
