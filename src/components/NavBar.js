@@ -16,7 +16,7 @@ class NavBar extends Component {
 
   constructor(props) {
     super(props);
-    this.isLoggedIn = true;
+    isLoggedIn = true;
   }
 
   async signOut() {
@@ -33,7 +33,7 @@ class NavBar extends Component {
       return (
         <nav className="NavBar-container">
           <div className="NavBar-linkContainer u-inlineBlock">
-            <button onClick = {signOut} className = "logOut">OUT</button>
+            <button onClick = {this.signOut} className = "logOut">OUT</button>
           </div>
         </nav>
       );
