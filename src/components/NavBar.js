@@ -13,7 +13,7 @@ async function signOut() {
         await Auth.signOut();
     } catch (error) {
         console.log('error signing out: ', error);
-        setIsLoggedIn(false)
+        setIsLoggedIn(false);
     }
 }
 
@@ -27,6 +27,7 @@ class NavBar extends Component {
   constructor(props) {
     super(props);
   }
+
   if(isLoggedIn){
     render() {
       return (
