@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { API } from 'aws-amplify';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import Amplify, { Auth } from 'aws-amplify';
-import awsconfig from './aws-exports';
-import { listEvents } from './graphql/queries';
-import { createEvent as createEventMutation, deleteEvent as deleteEventMutation } from './graphql/mutations';
-import Event from './components/Event.js'
+import awsconfig from '../aws-exports';
+import { listEvents } from '../graphql/queries';
+import { createEvent as createEventMutation, deleteEvent as deleteEventMutation } from '../graphql/mutations';
+import Event from '../components/Event.js'
 import "./api.css";
 
 Amplify.configure(awsconfig);
