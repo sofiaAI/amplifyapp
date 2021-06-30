@@ -22,14 +22,14 @@ const [isLoggedIn, setIsLoggedIn] = useState(true);
 /**
  * The navigation bar at the top of all pages. Takes no props.
  */
-class NavBar extends Component {
+class NavBar  Component {
 
   constructor(props) {
     super(props);
   }
 
-  if(isLoggedIn){
-    render() {
+  render() {
+    if(isLoggedIn){
       return (
         <nav className="NavBar-container">
           <div className="NavBar-linkContainer u-inlineBlock">
@@ -38,8 +38,10 @@ class NavBar extends Component {
         </nav>
       );
     }
+      return <Redirect to='/' />
+
   }
-  return <Redirect to='/' />
 }
+  
 
 export default NavBar;
