@@ -63,7 +63,7 @@ function Api() {
         value={formData.type}
       />
       <button onClick={createEvent}>Create Event</button>
-      <div style={{height:100+'px', width:140+'px', overflow:'auto', backgroundColor:"yellowgreen", color:"white",padding:10 + 'px'}>
+      <div style={{height:100+'px', width:140+'px', overflow:'auto', backgroundColor:"yellowgreen", color:"white",padding:10 + 'px'}}>
         {
           events.map(event => (
             <div>
