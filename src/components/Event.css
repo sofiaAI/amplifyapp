@@ -1,24 +1,44 @@
 .single-event{
   background-color: rgb(26, 52, 94);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.event-info{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  order : 1;
 }
 
 .time{
   color:white;
+  width: fit-content;
+  padding: 10px;
+  order: 3;
 }
 
 .location{
   color:white;
+  width: fit-content;
+  padding: 10px;
+  order: 1;
 }
 .video{
-  background-color: white;
-  height:30%;
-  width:30%;
-  position: absolute;
-  top: 50%; left: 5%;
-  transform: translate(-50%,-50%);
+  background-color: #fff;
+  height: 50%;
+  width: 30%;
+  position: relative;
+  order: 2;
 }
 
 .type{
   font-weight: bold;
+  font-size: larger;
   color: rgb(73, 123, 204);
+  padding: 10px;
+  position: relative;
+  order: 1;
+
 }

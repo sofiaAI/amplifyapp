@@ -11,16 +11,18 @@ import "./Event.css";
  */
 class Event extends Component {
   constructor(props) {
-    super(props);
+    super(props);d
   }
 
   render() {
     return (
       <div className = "single-event">
-        <div className = "time" > {this.props.time} </div>
-        <div className = "location" > {this.props.location} </div>
+        <div classname = "event-info">
+        <p className = "type" > {this.props.type} </p>
+        <p className = "location" > {this.props.location} </p>
+        <p className = "time" > {this.props.time} </p>
+        </div>
         <div className = "video" > {this.props.video} </div>
-        <div className = "type" > {this.props.type} </div>
       </div>
     );
   }
