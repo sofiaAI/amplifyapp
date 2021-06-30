@@ -75,7 +75,7 @@ function Api() {
               video = {event.video}
             />
             <button onClick={() => deleteEvent(event)}>Delete event</button>
-            <div>
+            </div>
           ))
         }
       </div>
