@@ -29,7 +29,7 @@ class NavBar extends Component {
   }
 
   render() {
-    if(isLoggedIn){
+    if(this.isLoggedIn){
       return (
         <nav className="NavBar-container">
           <div className="NavBar-linkContainer u-inlineBlock">
