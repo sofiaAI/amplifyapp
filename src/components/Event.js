@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./Event.css";
 /**
  * Event is a component for displaying the content of a security violation
  *

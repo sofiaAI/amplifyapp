@@ -5,7 +5,7 @@ import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from './aws-exports';
 import { listEvents } from './graphql/queries';
 import { createEvent as createEventMutation, deleteEvent as deleteEventMutation } from './graphql/mutations';
-
+import Event from './components/Event.js'
 
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
