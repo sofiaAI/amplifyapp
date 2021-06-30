@@ -11,7 +11,7 @@ import "./Event.css";
  */
 class Event extends Component {
   constructor(props) {
-    super(props);d
+    super(props);
   }
 
   render() {
