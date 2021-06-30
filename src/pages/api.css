@@ -6,4 +6,7 @@
   overflow:auto;
   background-color: transparent;
   padding:10px;
+  position: absolute;
+  top: 10%;
+  right: 0%;
 }

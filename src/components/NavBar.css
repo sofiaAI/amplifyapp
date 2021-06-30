@@ -1,5 +1,10 @@
 .NavBar-container {
-  padding: var(--s) var(--m);
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  width: 100%;
   background-color: var(--primary);
 }
 
