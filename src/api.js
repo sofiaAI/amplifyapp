@@ -41,6 +41,7 @@ function Api() {
   return (
     <div className="api">
       <h1>API CONNECTION</h1>
+
       <input
         onChange={e => setFormData({ ...formData, 'time': e.target.value})}
         placeholder="Event time"
@@ -62,15 +63,19 @@ function Api() {
         value={formData.type}
       />
       <button onClick={createEvent}>Create Event</button>
+
       <div style={{marginBottom: 30}}>
         {
           events.map(event => (
-            <div key={event.time || event.location}>
-              <h2>{event.time}</h2>
-              <p>{event.location}</p>
-              <p>{event.video}</p>
-              <button onClick={() => deleteEvent(event)}>Delete event</button>
-            </div>
+            <div>
+            <Event
+              type={event.type}
+              time = {event.time}
+              location = {event.location}
+              video = {event.video}
+            />
+            <button onClick={() => deleteEvent(event)}>Delete event</button>
+            <div>
           ))
         }
       </div>
