@@ -16,7 +16,7 @@ class NavBar extends Component {
 
   constructor(props) {
     super(props);
-    isLoggedIn = true;
+    this.isLoggedIn = true;
   }
 
   async signOut() {
