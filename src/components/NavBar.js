@@ -21,9 +21,9 @@ async function signOut() {
 /**
  * The navigation bar at the top of all pages. Takes no props.
  */
-class NavBar  Component {
+class NavBar extends Component {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
-  
+
   constructor(props) {
     super(props);
   }
