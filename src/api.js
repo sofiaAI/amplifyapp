@@ -64,7 +64,7 @@ function Api() {
       />
       <button onClick={createEvent}>Create Event</button>
 
-      <div style={{marginBottom: 30}}>
+      <div style="height:100px;width:140px;overflow:auto;background-color:yellowgreen;color:white;scrollbar-base-color:gold;font-family:sans-serif;padding:10px;">
         {
           events.map(event => (
             <div>
