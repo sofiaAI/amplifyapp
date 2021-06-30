@@ -1,4 +1,4 @@
-import React, { Component }, { useState } from "react";
+import React, { Component , useState } from "react";
 import { AmplifySignOut } from '@aws-amplify/ui-react';
 import Amplify, { Auth } from 'aws-amplify';
 import { Redirect } from "react-router-dom";
