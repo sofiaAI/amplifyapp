@@ -19,7 +19,7 @@ class NavBar extends Component {
     this.isLoggedIn = true;
   }
 
-  async function signOut() {
+  async signOut() {
       try {
           await Auth.signOut();
       } catch (error) {
