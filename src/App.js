@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Login from "./pages/Login.js";
 import Home from "./pages/Home.js";
-import Api from "./api.js";
+import Api from "./pages/api.js";
 import {
   BrowserRouter as Router,
   Switch,
