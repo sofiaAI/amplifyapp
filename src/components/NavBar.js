@@ -8,24 +8,24 @@ import awsconfig from '../aws-exports';
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
-async function signOut() {
-    try {
-        await Auth.signOut();
-    } catch (error) {
-        console.log('error signing out: ', error);
-        setIsLoggedIn(false);
-    }
-}
-
 
 /**
  * The navigation bar at the top of all pages. Takes no props.
  */
 class NavBar extends Component {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   constructor(props) {
     super(props);
+    this.isLoggedIn = true;
+  }
+
+  async function signOut() {
+      try {
+          await Auth.signOut();
+      } catch (error) {
+          console.log('error signing out: ', error);
+      }
+      this.isLoggedIn = false;
   }
 
   render() {
