@@ -6,6 +6,7 @@ import awsconfig from '../aws-exports';
 import { listEvents } from '../graphql/queries';
 import { createEvent as createEventMutation, deleteEvent as deleteEventMutation } from '../graphql/mutations';
 import Event from '../components/Event.js';
+import NavBar from '../components/NavBar.js';
 import "./api.css";
 
 Amplify.configure(awsconfig);
@@ -41,8 +42,7 @@ function Api() {
 
   return (
     <div className="api">
-      <h1>API CONNECTION</h1>
-
+      <NavBar/>
       <input
         onChange={e => setFormData({ ...formData, 'time': e.target.value})}
         placeholder="Event time"
@@ -79,7 +79,6 @@ function Api() {
           ))
         }
       </div>
-      <AmplifySignOut />
     </div>
   );
 }
