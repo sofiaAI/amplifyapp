@@ -15,6 +15,6 @@
 }
 
 .drop-down_menu_anim{
-  animation: growDown 300ms ease-in-out forwards
-  display: flex
+  animation: growDown 300ms ease-in-out forwards;
+  display: flex;
 }
