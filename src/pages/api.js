@@ -83,7 +83,7 @@ function Api() {
         {
           events.map(event => (
             <div>
-            <p>{event.type, event.time}</p
+            <p>{event.type, event.time}</p>
             <button onClick={() => deleteEvent(event)}>Delete event</button>
             </div>
           ))
