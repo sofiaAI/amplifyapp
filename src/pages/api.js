@@ -84,29 +84,36 @@ function Api() {
           ))
         }
       </div>
+      <div id="app">
+      <aside class="aside is-placed-left is-expanded">
+        <div class="menu is-menu-main">
+          <ul class="menu-list">
+            <li>
+              <a class="has-icon has-dropdown-icon">
+                <span class="icon"><i class="mdi mdi-view-list"></i></span>
+                <span class="menu-item-label">Submenus</span>
+                <div class="dropdown-icon">
+                  <span class="icon"><i class="mdi mdi-plus"></i></span>
+                </div>
+              </a>
 
-      <li>
-        <a class="has-icon has-dropdown-icon">
-          <span class="icon"><i class="mdi mdi-view-list"></i></span>
-          <span class="menu-item-label">Submenus</span>
-          <div class="dropdown-icon">
-            <span class="icon"><i class="mdi mdi-plus"></i></span>
-          </div>
-        </a>
-        <ul>
-          <li>
-            <a href="#void">
-              <span>Sub-item One</span>
-            </a>
-          </li>
-          <li>
-            <a href="#void">
-              <span>Sub-item Two</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-
+              <ul>
+                <li>
+                  <a href="#void">
+                    <span>Sub-item One</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#void">
+                    <span>Sub-item Two</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      </div>
       <div className = "delete">
         {
           events.map(event => (
