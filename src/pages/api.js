@@ -80,6 +80,24 @@ function Api() {
           ))
         }
       </div>
+      <li>
+        <a class="has-icon has-dropdown-icon">
+          <span class="icon"><i class="mdi mdi-view-list"></i></span>
+          <span class="menu-item-label">Submenus</span>
+          <div class="dropdown-icon">
+            <span class="icon"><i class="mdi mdi-plus"></i></span>
+          </div>
+        </a>
+        <ul>
+          <li>
+            <a href="#void">
+              <span>Sub-item One</span>
+            </a>
+          </li>
+          <li>
+            <a href="#void">
+              <span>Sub-item Two</span>
+            </a>
 
       <div className = "delete">
         {

@@ -17,3 +17,23 @@
   left: 0;
 
 }
+
+aside.aside .aside-tools .icon {
+  margin-right: 0.75rem;
+}
+
+
+aside.aside .menu-list li ul li a.has-icon {
+  padding-left: 0;
+}
+
+aside.aside .menu-list li a.has-dropdown-icon {
+  position: relative;
+  padding-right: 3rem;
+}
+
+aside.aside .menu-list li a.has-dropdown-icon .dropdown-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+}
