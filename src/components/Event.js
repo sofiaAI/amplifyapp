@@ -18,7 +18,8 @@ class Event extends Component {
   }
 
   componentDidMount(){
-    document.getElementById(this.props.id_).addEventListener('click', function (e) {
+    document.getElementById(this.props.id_).getElementsByClassName('standard-view')[0].addEventListener('click',
+    function (e) {
       var dropdownIcon = e.currentTarget.getElementsByClassName('arrow-icon')[0];
       var dropdown = e.currentTarget.getElementsByClassName('drop-down')[0];
       if(dropdown.style.display === "flex"){
