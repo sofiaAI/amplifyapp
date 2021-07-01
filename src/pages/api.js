@@ -116,8 +116,7 @@ function Api() {
         }
       </div>
 
-    </div>
-    <!-- Scripts below are for demo only -->
+    </div> 
     <script type="text/javascript" src="js/main.min.js"></script>
     <script type="text/javascript" src="js/chart.sample.min.js"></script>
     </body>
