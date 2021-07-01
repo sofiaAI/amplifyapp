@@ -14,15 +14,28 @@ class Event extends Component {
     super(props);
   }
 
+  showAlert() {
+    alert("I'm an alert");
+  }
+
   render() {
     return (
-      <div className = "single-event">
-        <div className = "event-info">
-        <p className = "type" > {this.props.type} </p>
-        <p className = "location" > {this.props.location} </p>
-        <p className = "time" > {this.props.time} </p>
+      <div className = "single-event" onClick ={this.showAlert}>
+        <div className = "standard-view">
+          <div className = "event-info">
+            <p className = "type" > {this.props.type} </p>
+            <p className = "location" > {this.props.location} </p>
+            <p className = "time" > {this.props.time} </p>
+          </div>
+          <div className = "video" > {this.props.video} </div>
+          <p className = "arrow-icon">ar</p>
         </div>
-        <div className = "video" > {this.props.video} </div>
+        <div className = "drop-down">
+          <div className = "drop-down-button"/>
+          <div className = "drop-down-button"/>
+          <div className = "drop-down-button"/>
+          <div className = "drop-down-button"/>
+        </div>
       </div>
     );
   }

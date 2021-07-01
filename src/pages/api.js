@@ -74,11 +74,22 @@ function Api() {
               location = {event.location}
               video = {event.video}
             />
+            </div>
+          ))
+        }
+      </div>
+
+      <div className = "delete">
+        {
+          events.map(event => (
+            <div>
+            <p>{event.type, event.time}</p
             <button onClick={() => deleteEvent(event)}>Delete event</button>
             </div>
           ))
         }
       </div>
+
     </div>
   );
 }

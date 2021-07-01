@@ -1,4 +1,4 @@
-.single-event{
+.standard-view{
   background-color: rgb(26, 52, 94);
   position: relative;
   display: flex;
@@ -6,21 +6,34 @@
   flex-direction: row;
   border-radius: 4px;
   box-shadow: 0px 0px 4px 0px #1f1f1f;
+  z-index: 1;
 }
+
 
 .event-info{
   position: relative;
   display: flex;
-  width: 22vw;
+  width: 19vw;
   flex-direction: column;
   order : 1;
+}
+
+.type{
+  font-weight: bold;
+  font-size: 1.6vw;
+  color: rgb(73, 123, 204);
+  padding: 10px;
+  margin: 0px;
+  position: relative;
+  order: 1;
+
 }
 
 .time{
   color:white;
   width: fit-content;
-  padding: 10px;
-  padding-top: 0px;
+  padding: 0 15px 7px;
+  font-size: 1.3vw;
   margin: 0px;
   order: 3;
 }
@@ -28,28 +41,39 @@
 .location{
   color:white;
   width: fit-content;
-  padding: 10px;
-  padding-top: 0px;
-  margin: 0px;
+  padding: 0 15px 7px;
+  font-size: 1.3vw;
+  margin: 0;
   order: 1;
 }
+
 .video{
   background-color: #fff;
   height: 50%;
-  width: 200px;
+  width: 9vw;
   border-radius: 4px;
   position: relative;
   order: 2;
   align-self: center;
 }
 
-.type{
-  font-weight: bold;
-  font-size: 2vw;
-  color: rgb(73, 123, 204);
-  padding: 10px;
-  margin: 0px;
-  position: relative;
-  order: 1;
+.arrow-icon{
+  width = 2vw;
+  align-self: center;
+  align-content: center;
+}
 
+.drop-down{
+  background-color: rgb(26, 52, 94);
+  position: relative;
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 0px #1f1f1f;
+  z-index: 0;
+}
+
+.drop-down-button{
+  
 }
