@@ -34,7 +34,7 @@ class Event extends Component {
           <div className = "video" > {this.props.video} </div>
           <p className = "arrow-icon">ar</p>
         </div>
-        <div className = "drop-down" id = {this.id}>
+        <div className = "drop-down" id = {this.props.id_}>
           <div className = "drop-down-button"> Button 1 </div>
           <div className = "drop-down-button"> Button 2 </div>
           <div className = "drop-down-button"> Button 3 </div>
