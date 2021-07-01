@@ -1,5 +1,5 @@
-.api{
-  background-image: url('../public/blue-gradient.jpeg');
+body{
+  background-image: url(../public/blue-gradient.jpeg);
 }
 .events-container{
   height: 55vh;
