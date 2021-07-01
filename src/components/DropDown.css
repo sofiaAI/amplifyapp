@@ -20,14 +20,14 @@
   text-align: center;
 }
 
-.drop-down_menu_anim{
+.drop-down-menu-anim{
   animation: growDown 700ms ease-in-out forwards;
   transform-origin: top center;
-  display: flex;
 }
 
 @keyframes growDown {
   0% {
+    display: flex;
     transform: scaleY(0)
   }
   80% {
