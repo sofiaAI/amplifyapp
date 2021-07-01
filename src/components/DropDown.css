@@ -1,0 +1,15 @@
+.drop-down{
+  position: relative;
+  top : 0px;
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  z-index: 0;
+}
+
+.drop-down-button{
+  background-color: rgb(26, 52, 94);
+  width : 7.5vw;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 0px #1f1f1f;
+}
