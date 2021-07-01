@@ -8,8 +8,6 @@ import { createEvent as createEventMutation, deleteEvent as deleteEventMutation 
 import Event from '../components/Event.js';
 import NavBar from '../components/NavBar.js';
 import "./api.css";
-import "./main.css";
-import "./main.min.css";
 import uniqid from 'uniqid'
 
 Amplify.configure(awsconfig);
@@ -84,36 +82,7 @@ function Api() {
           ))
         }
       </div>
-      <div id="app">
-      <aside class="aside is-placed-left is-expanded">
-        <div class="menu is-menu-main">
-          <ul class="menu-list">
-            <li>
-              <a class="has-icon has-dropdown-icon">
-                <span class="icon"><i class="mdi mdi-view-list"></i></span>
-                <span class="menu-item-label">Submenus</span>
-                <div class="dropdown-icon">
-                  <span class="icon"><i class="mdi mdi-plus"></i></span>
-                </div>
-              </a>
 
-              <ul>
-                <li>
-                  <a href="#void">
-                    <span>Sub-item One</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#void">
-                    <span>Sub-item Two</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </aside>
-      </div>
       <div className = "delete">
         {
           events.map(event => (
@@ -126,8 +95,13 @@ function Api() {
       </div>
 
     </div>
-    <script type="text/javascript" src="js/main.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+    Array.from(document.getElementsByClassName('events-container')).forEach(function (el) {
+        el.addEventListener('click', function (e) {
+          console.log(currentTarget);
+        });
+    });
+    </script>
     </body>
     </html>
   );

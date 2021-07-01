@@ -22,10 +22,11 @@ class Event extends Component {
     document.getElementById(this.props.id_).style.display = "flex";
   }
 
+
   render() {
     return (
       <div className = "single-event">
-        <div className = "standard-view" onClick ={this.showDropDown}>
+        <div className = "standard-view" >
           <div className = "event-info">
             <p className = "type" > {this.props.type} </p>
             <p className = "location" > {this.props.location} </p>
