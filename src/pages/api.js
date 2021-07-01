@@ -96,11 +96,9 @@ function Api() {
 
     </div>
     <script>
-    Array.from(document.getElementsByClassName('events-container')).forEach(function (el) {
-        el.addEventListener('click', function (e) {
-          console.log(currentTarget);
+        Array.from(document.getElementsByClassName('events-container')).forEach(function (el) {
+            el.addEventListener('click', function (e) { console.log(currentTarget) });
         });
-    });
     </script>
     </body>
     </html>
