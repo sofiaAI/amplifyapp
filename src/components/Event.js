@@ -15,7 +15,6 @@ import DropDown from "./DropDown.js";
 class Event extends Component {
   constructor(props) {
     super(props);
-    this.showDropDown = this.showDropDown.bind(this);
   }
 
   componentDidMount(){
