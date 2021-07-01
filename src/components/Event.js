@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Event.css";
+import DropDown from "./DropDown.js";
 /**
  * Event is a component for displaying the content of a security violation
  *
@@ -30,12 +31,7 @@ class Event extends Component {
           <div className = "video" > {this.props.video} </div>
           <p className = "arrow-icon">ar</p>
         </div>
-        <div className = "drop-down">
-          <div className = "drop-down-button"/>
-          <div className = "drop-down-button"/>
-          <div className = "drop-down-button"/>
-          <div className = "drop-down-button"/>
-        </div>
+        <DropDown/>
       </div>
     );
   }

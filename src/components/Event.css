@@ -1,3 +1,5 @@
+@import "./DropDown.css";
+
 .standard-view{
   background-color: rgb(26, 52, 94);
   position: relative;
@@ -63,19 +65,4 @@
   align-self: center;
   align-content: center;
   order: 3;
-}
-
-.drop-down{
-  background-color: rgb(26, 52, 94);
-  position: relative;
-  display: flex;
-  height: fit-content;
-  flex-direction: row;
-  border-radius: 4px;
-  box-shadow: 0px 0px 4px 0px #1f1f1f;
-  z-index: 0;
-}
-
-.drop-down-button{
-
 }
