@@ -29,10 +29,8 @@
   0% {
     height: 0;
     display: flex;
-    transform: scaleY(0)
   }
   100% {
-    height: fit-content;
-    transform: scaleY(1)
+    height: 4vw;
   }
 }
