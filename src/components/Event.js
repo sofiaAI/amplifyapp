@@ -30,12 +30,6 @@ class Event extends Component {
     });
   }
 
-  }
-  componentDidUpdate() {
-  }
-
-
-
   render() {
     return (
       <div className = "single-event" id = {this.props.id_} >
