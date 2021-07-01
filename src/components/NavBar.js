@@ -13,14 +13,11 @@ class NavBar extends Component {
 
   render() {
     return (
-      <>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <nav className="NavBar-container">
         <div className="NavBar-linkContainer u-inlineBlock">
           <AmplifySignOut buttonText= <i class="fa fa-sign-out"></i>></AmplifySignOut>
         </div>
       </nav>
-      </>
     );
   }
 }
