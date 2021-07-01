@@ -11,7 +11,7 @@
 .event-info{
   position: relative;
   display: flex;
-  width: 19vw;
+  width: 22vw;
   flex-direction: column;
   order : 1;
 }
