@@ -45,7 +45,7 @@ function Api() {
     <html lang="en" class="has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded">
     <head>
       <script>
-          console.log("hello");
+          let arr = Array.from(document.getElementsByClassName('events-container'));
       </script>
     </head>
     <body>
