@@ -43,13 +43,6 @@ function Api() {
 
   return (
     <html lang="en" class="has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded">
-    <head>
-      <script>
-          let arr = Array.from(document.getElementsByClassName('events-container'));
-          arr.forEach( el => el.addEventListener('click', console.log(e)) );
-
-      </script>
-    </head>
     <body>
     <div className="api">
       <NavBar/>
@@ -102,6 +95,12 @@ function Api() {
       </div>
 
     </div>
+    <script>
+        let arr = Array.from(document.getElementsByClassName('events-container'));
+        arr.forEach( el => el.addEventListener('click', console.log(e)) );
+
+    </script>
+    
     </body>
     </html>
   );
