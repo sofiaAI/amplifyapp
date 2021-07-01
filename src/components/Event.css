@@ -58,7 +58,7 @@
 }
 
 .arrow-icon{
-  width = 2vw;
+  width : 2vw;
   align-self: center;
   align-content: center;
 }
@@ -75,5 +75,5 @@
 }
 
 .drop-down-button{
-  
+
 }
