@@ -8,6 +8,8 @@ import { createEvent as createEventMutation, deleteEvent as deleteEventMutation 
 import Event from '../components/Event.js';
 import NavBar from '../components/NavBar.js';
 import "./api.css";
+import "./main.css";
+import "./main.min.css";
 import uniqid from 'uniqid'
 
 Amplify.configure(awsconfig);
@@ -116,9 +118,9 @@ function Api() {
         }
       </div>
 
-    </div> 
+    </div>
     <script type="text/javascript" src="js/main.min.js"></script>
-    <script type="text/javascript" src="js/chart.sample.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     </body>
     </html>
   );
