@@ -1,5 +1,5 @@
 body{
-  background-image: url(src/public/blue-gradient.jpeg);
+  background-image: url(../public/blue-gradient.jpeg);
 }
 .events-container{
   height: 55vh;
