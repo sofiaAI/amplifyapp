@@ -42,7 +42,6 @@ function Api() {
   }
 
   return (
-    <!DOCTYPE html>
     <html lang="en" class="has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded">
     <body>
     <div className="api">
