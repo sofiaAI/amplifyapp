@@ -46,7 +46,6 @@ function Api() {
     <head>
       <script>
           Array.from(document.getElementsByClassName('events-container')).forEach(function (el) {
-              console.log(el);
               el.addEventListener('click', function (e) { console.log(currentTarget) });
             };
 
