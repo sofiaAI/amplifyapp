@@ -1,20 +1,26 @@
 .drop-down{
   position: relative;
-  top : 0px;
+  top : -0.5vh;
+  color: white;
   display: none;
-  height: fit-content;
+  height: 4vw;
   flex-direction: row;
   z-index: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #537be5;
 }
 
 .drop-down-button{
   background-color: rgb(26, 52, 94);
   width : 7.5vw;
-  border-radius: 4px;
-  box-shadow: 0px 0px 4px 0px #1f1f1f;
+  border-style: inset;
+  border-width: thin;
+  border-color: #537be5;
+  text-align: center;
 }
 
 .drop-down_menu_anim{
-  animation: growDown 300ms ease-in-out forwards;
+  animation: growDown 700ms ease-in-out forwards;
   display: flex;
 }
