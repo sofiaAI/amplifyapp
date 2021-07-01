@@ -18,14 +18,27 @@ class Event extends Component {
     this.showDropDown = this.showDropDown.bind(this);
   }
 
-  showDropDown() {
-    document.getElementById(this.props.id_).style.display = "flex";
+  componentDidMount(){
+    document.getElementById(this.props.id_).addEventListener('click', function (e) {
+      var dropdownIcon = e.currentTarget.getElementsByClassName('arrow-icon')[0];
+      var dropdown = e.currentTarget.getElementsByClassName('drop-down')[0];
+      if(dropdown.style.display === "flex"){
+        dropdown.style.display = "none";
+      }else{
+        dropdown.style.display = "flex";
+      }
+    });
   }
+
+  }
+  componentDidUpdate() {
+  }
+
 
 
   render() {
     return (
-      <div className = "single-event">
+      <div className = "single-event" id = {this.props.id_} >
         <div className = "standard-view" >
           <div className = "event-info">
             <p className = "type" > {this.props.type} </p>
@@ -35,7 +48,7 @@ class Event extends Component {
           <div className = "video" > {this.props.video} </div>
           <p className = "arrow-icon">ar</p>
         </div>
-        <div className = "drop-down" id = {this.props.id_}>
+        <div className = "drop-down">
           <div className = "drop-down-button"> Button 1 </div>
           <div className = "drop-down-button"> Button 2 </div>
           <div className = "drop-down-button"> Button 3 </div>

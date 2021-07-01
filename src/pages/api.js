@@ -95,12 +95,7 @@ function Api() {
       </div>
 
     </div>
-    <script>
-        let arr = Array.from(document.getElementsByClassName('events-container'));
-        arr.forEach( el => el.addEventListener('click', console.log(e)) );
 
-    </script>
-    
     </body>
     </html>
   );
