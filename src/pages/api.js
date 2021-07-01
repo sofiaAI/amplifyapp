@@ -42,6 +42,9 @@ function Api() {
   }
 
   return (
+    <!DOCTYPE html>
+    <html lang="en" class="has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded">
+    <body>
     <div className="api">
       <NavBar/>
       <input
@@ -80,6 +83,7 @@ function Api() {
           ))
         }
       </div>
+
       <li>
         <a class="has-icon has-dropdown-icon">
           <span class="icon"><i class="mdi mdi-view-list"></i></span>
@@ -98,6 +102,9 @@ function Api() {
             <a href="#void">
               <span>Sub-item Two</span>
             </a>
+          </li>
+        </ul>
+      </li>
 
       <div className = "delete">
         {
@@ -111,6 +118,11 @@ function Api() {
       </div>
 
     </div>
+    <!-- Scripts below are for demo only -->
+    <script type="text/javascript" src="js/main.min.js"></script>
+    <script type="text/javascript" src="js/chart.sample.min.js"></script>
+    </body>
+    </html>
   );
 }
 
