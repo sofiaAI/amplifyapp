@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "./Event.css";
 import DropDown from "./DropDown.js";
+
 /**
  * Event is a component for displaying the content of a security violation
  *
  * Proptypes
+ * @param {string} id_
  * @param {string} time of the event
  * @param {string} location
  * @param {...} video
@@ -31,7 +33,7 @@ class Event extends Component {
           <div className = "video" > {this.props.video} </div>
           <p className = "arrow-icon">ar</p>
         </div>
-        <div className = "drop-down" id = "dd">
+        <div className = "drop-down" id = {this.id}>
           <div className = "drop-down-button"> Button 1 </div>
           <div className = "drop-down-button"> Button 2 </div>
           <div className = "drop-down-button"> Button 3 </div>

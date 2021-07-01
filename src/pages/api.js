@@ -8,6 +8,7 @@ import { createEvent as createEventMutation, deleteEvent as deleteEventMutation 
 import Event from '../components/Event.js';
 import NavBar from '../components/NavBar.js';
 import "./api.css";
+import uniqid from 'uniqid'
 
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
@@ -69,6 +70,7 @@ function Api() {
           events.map(event => (
             <div>
             <Event
+              id_ = {uniqid()}
               type={event.type}
               time = {event.time}
               location = {event.location}
