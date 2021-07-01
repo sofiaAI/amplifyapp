@@ -46,7 +46,7 @@ function Api() {
     <head>
       <script>
           let arr = Array.from(document.getElementsByClassName('events-container'));
-          arr.forEach(function (el) { console.log(el); });
+          arr.forEach(el => console.log(el));
       </script>
     </head>
     <body>
