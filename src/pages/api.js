@@ -45,10 +45,7 @@ function Api() {
     <html lang="en" class="has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded">
     <head>
       <script>
-          Array.from(document.getElementsByClassName('events-container')).forEach(function (el) {
-              el.addEventListener('click', function (e) { console.log(currentTarget) });
-            };
-
+          console.log("hello");
       </script>
     </head>
     <body>
