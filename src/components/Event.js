@@ -27,7 +27,7 @@ class Event extends Component {
         dropdown.classList.remove('drop-down-menu-anim');
       }else{
         void dropdown.offsetWidth;
-        element.classList.add('drop-down-menu-anim');
+        dropdown.classList.add('drop-down-menu-anim');
         dropdown.style.display = "flex";
       }
     });
