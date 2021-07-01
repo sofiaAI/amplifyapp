@@ -18,7 +18,7 @@ class Event extends Component {
   }
 
   showDropDown() {
-    document.getElementById({this.props.id_}).style.display = "flex";
+    document.getElementById(this.props.id_).style.display = "flex";
   }
 
   render() {
