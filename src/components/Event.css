@@ -1,5 +1,8 @@
 @import "./DropDown.css";
 
+single-event{
+  position: relative;
+}
 .standard-view{
   background-color: rgb(26, 52, 94);
   position: relative;

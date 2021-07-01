@@ -15,14 +15,14 @@ class Event extends Component {
     super(props);
   }
 
-  showAlert() {
-    alert("I'm an alert");
+  showDropDown() {
+    document.getElementById("dd").style.display = "flex";
   }
 
   render() {
     return (
-      <div className = "single-event" onClick ={this.showAlert}>
-        <div className = "standard-view">
+      <div className = "single-event">
+        <div className = "standard-view" onClick ={this.showDropDown}>
           <div className = "event-info">
             <p className = "type" > {this.props.type} </p>
             <p className = "location" > {this.props.location} </p>
@@ -31,7 +31,12 @@ class Event extends Component {
           <div className = "video" > {this.props.video} </div>
           <p className = "arrow-icon">ar</p>
         </div>
-        <DropDown/>
+        <div className = "drop-down" id = "dd">
+          <div className = "drop-down-button"> Button 1 </div>
+          <div className = "drop-down-button"> Button 2 </div>
+          <div className = "drop-down-button"> Button 3 </div>
+          <div className = "drop-down-button"> Button 4 </div>
+        </div>
       </div>
     );
   }

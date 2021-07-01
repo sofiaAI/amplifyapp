@@ -1,7 +1,7 @@
 .drop-down{
   position: relative;
   top : 0px;
-  display: flex;
+  display: none;
   height: fit-content;
   flex-direction: row;
   z-index: 0;
