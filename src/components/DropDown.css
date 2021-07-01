@@ -22,7 +22,7 @@
 
 .drop-down_menu_anim{
   animation: growDown 700ms ease-in-out forwards;
-  transform-origin: top center
+  transform-origin: top center;
   display: flex;
 }
 
