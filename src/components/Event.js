@@ -17,7 +17,7 @@ class Event extends Component {
   render() {
     return (
       <div className = "single-event">
-        <div classname = "event-info">
+        <div className = "event-info">
         <p className = "type" > {this.props.type} </p>
         <p className = "location" > {this.props.location} </p>
         <p className = "time" > {this.props.time} </p>
