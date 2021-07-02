@@ -39,7 +39,7 @@ class Event extends Component {
     if(container.style.display == "block"){
       container.style.display = "none";
     }else{
-      container.getElementsByClassName('video').src = this.props.video;
+      container.getElementsByClassName('video').setAttribute("src", this.props.video);
       container.style.display = "block";
     }
   }
