@@ -42,7 +42,7 @@ class Event extends Component {
             <p className = "location" > {this.props.location} </p>
             <p className = "time" > {this.props.time} </p>
           </div>
-          <div className = "video" > {this.props.video} </div>
+          <video className = "video" controls loop width="500" height="400" src= {this.props.video} type=video/mp4> </video>
           <p className = "arrow-icon">ar</p>
         </div>
         <div className = "drop-down">
