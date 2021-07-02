@@ -44,7 +44,7 @@ class Event extends Component {
               <p className = "time" > {this.props.time} </p>
             </div>
             <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
-            <p className = "arrow-icon">ar</p>
+            <p className = "arrow-icon"></p>
           </div>
           <div className = "drop-down">
             <button className = "drop-down-button" id = "d"> Button 1 </button>
