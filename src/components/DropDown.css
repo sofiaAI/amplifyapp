@@ -12,6 +12,7 @@
 
 .drop-down-button{
   background-color: rgb(26, 52, 94);
+  color: white;
   width : 7.5vw;
   border-style: inset;
   border-width: thin;

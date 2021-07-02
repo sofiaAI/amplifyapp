@@ -47,10 +47,10 @@ class Event extends Component {
             <p className = "arrow-icon"></p>
           </div>
           <div className = "drop-down">
-            <button className = "drop-down-button" id = "d"> Button 1 </button>
-            <div className = "drop-down-button"> Button 2 </div>
-            <div className = "drop-down-button"> Button 3 </div>
-            <div className = "drop-down-button"> Button 4 </div>
+            <button className = "drop-down-button"> Button 1 </button>
+            <button className = "drop-down-button"> Button 2 </button>
+            <button className = "drop-down-button"> Button 3 </button>
+            <button className = "drop-down-button"> Button 4 </button>
           </div>
         </div>
       </div>
