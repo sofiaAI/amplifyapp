@@ -57,7 +57,7 @@ class Event extends Component {
                 <p className = "arrow-icon"></p>
             </div>
           <div className = "drop-down">
-              <button className = "drop-down-button" onClick = {playVideo}> Replay Clip </button>
+              <button className = "drop-down-button" onClick = {this.playVideo}> Replay Clip </button>
               <button className = "drop-down-button"> Button 2 </button>
               <button className = "drop-down-button"> Button 3 </button>
               <button className = "drop-down-button"> Button 4 </button>
