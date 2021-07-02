@@ -35,27 +35,25 @@ class Event extends Component {
 
   render() {
     return (
-      < id = {this.props.id_}  >
-      <div className = "single-event">
-        <div className = "standard-view" >
-          <div className = "event-info">
-            <p className = "type" > {this.props.type} </p>
-            <p className = "location" > {this.props.location} </p>
-            <p className = "time" > {this.props.time} </p>
+      <div>
+        <div className = "single-event" id = {this.props.id_} >
+          <div className = "standard-view" >
+            <div className = "event-info">
+              <p className = "type" > {this.props.type} </p>
+              <p className = "location" > {this.props.location} </p>
+              <p className = "time" > {this.props.time} </p>
+            </div>
+            <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
+            <p className = "arrow-icon">ar</p>
           </div>
-          <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
-          <p className = "arrow-icon">ar</p>
+          <div className = "drop-down">
+            <button className = "drop-down-button" id = "d"> Button 1 </button>
+            <div className = "drop-down-button"> Button 2 </div>
+            <div className = "drop-down-button"> Button 3 </div>
+            <div className = "drop-down-button"> Button 4 </div>
+          </div>
         </div>
-        <div className = "drop-down">
-          <button className = "drop-down-button" id = "dd1"> Button 1 </button>
-          <div className = "drop-down-button"> Button 2 </div>
-          <div className = "drop-down-button"> Button 3 </div>
-          <div className = "drop-down-button"> Button 4 </div>
-        </div>
-      </div>
-      <div className = "video-container">
-      </div>
-      </>
+
     );
   }
 }
