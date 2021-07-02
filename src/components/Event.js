@@ -53,6 +53,7 @@ class Event extends Component {
             <div className = "drop-down-button"> Button 4 </div>
           </div>
         </div>
+      </div>
 
     );
   }
