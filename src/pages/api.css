@@ -17,3 +17,11 @@ body{
   left: 0;
 
 }
+
+.video-container{
+  top: 10vh;
+  left: 2vw;
+  width: 20vw;
+  position: absolute;
+  display : 'none';
+}

@@ -93,6 +93,9 @@ function Api() {
         }
       </div>
 
+      <div className = "video-container">
+        <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
+      </div>
 
     </div>
 
