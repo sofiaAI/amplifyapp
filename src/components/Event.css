@@ -78,5 +78,5 @@ single-event{
   left: 2vw;
   width: 20vw;
   position: absolute;
-  display = 'none';
+  display : 'none';
 }
