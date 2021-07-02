@@ -35,23 +35,23 @@ class Event extends Component {
 
   render() {
     return (
-      <div>
-        <div className = "single-event" id = {this.props.id_} >
-          <div className = "standard-view" >
-            <div className = "event-info">
-              <p className = "type" > {this.props.type} </p>
-              <p className = "location" > {this.props.location} </p>
-              <p className = "time" > {this.props.time} </p>
+      <div  id = {this.props.id_}>
+        <div className = "single-event">
+            <div className = "standard-view" >
+                <div className = "event-info">
+                    <p className = "type" > {this.props.type} </p>
+                    <p className = "location" > {this.props.location} </p>
+                    <p className = "time" > {this.props.time} </p>
+                </div>
+                <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
+                <p className = "arrow-icon"></p>
             </div>
-            <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
-            <p className = "arrow-icon"></p>
-          </div>
-          <div className = "drop-down">
-            <button className = "drop-down-button"> Button 1 </button>
-            <button className = "drop-down-button"> Button 2 </button>
-            <button className = "drop-down-button"> Button 3 </button>
-            <button className = "drop-down-button"> Button 4 </button>
-          </div>
+            <div className = "drop-down">
+                <button className = "drop-down-button"> Replay Clip </button>
+                <button className = "drop-down-button"> Button 2 </button>
+                <button className = "drop-down-button"> Button 3 </button>
+                <button className = "drop-down-button"> Button 4 </button>
+            </div>
         </div>
       </div>
 
