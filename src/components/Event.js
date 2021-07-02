@@ -35,7 +35,8 @@ class Event extends Component {
 
   render() {
     return (
-      <div className = "single-event" id = {this.props.id_} >
+      < id = {this.props.id_}  >
+      <div className = "single-event">
         <div className = "standard-view" >
           <div className = "event-info">
             <p className = "type" > {this.props.type} </p>
@@ -46,12 +47,15 @@ class Event extends Component {
           <p className = "arrow-icon">ar</p>
         </div>
         <div className = "drop-down">
-          <button className = "drop-down-button"> Button 1 </button>
+          <button className = "drop-down-button" id = "dd1"> Button 1 </button>
           <div className = "drop-down-button"> Button 2 </div>
           <div className = "drop-down-button"> Button 3 </div>
           <div className = "drop-down-button"> Button 4 </div>
         </div>
       </div>
+      <div className = "video-container">
+      </div>
+      </>
     );
   }
 }
