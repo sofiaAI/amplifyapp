@@ -72,3 +72,11 @@ single-event{
   align-content: center;
   order: 3;
 }
+
+.video-container{
+  top: 10vh;
+  left: 2vw;
+  width: 20vw;
+  position: absolute;
+  display = 'none';
+}

@@ -15,6 +15,7 @@ import DropDown from "./DropDown.js";
 class Event extends Component {
   constructor(props) {
     super(props);
+    this.playVideo = this.playVideo.bind(this);
   }
 
   componentDidMount(){
@@ -33,6 +34,15 @@ class Event extends Component {
     });
   }
 
+  playVideo(){
+    var container = document.getElementById(this.props.id_).getElementsByClassName('video-container')[0]
+    if(container.style.display == "block"){
+      container.style.display = "none";
+    }else{
+      container.style.display = "block";
+    }
+  }
+
   render() {
     return (
       <div  id = {this.props.id_}>
@@ -46,12 +56,15 @@ class Event extends Component {
                 <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
                 <p className = "arrow-icon"></p>
             </div>
-            <div className = "drop-down">
-                <button className = "drop-down-button"> Replay Clip </button>
-                <button className = "drop-down-button"> Button 2 </button>
-                <button className = "drop-down-button"> Button 3 </button>
-                <button className = "drop-down-button"> Button 4 </button>
-            </div>
+          <div className = "drop-down">
+              <button className = "drop-down-button" onClick = {playVideo}> Replay Clip </button>
+              <button className = "drop-down-button"> Button 2 </button>
+              <button className = "drop-down-button"> Button 3 </button>
+              <button className = "drop-down-button"> Button 4 </button>
+          </div>
+          <div className = "video-container">
+            <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
+          </div>
         </div>
       </div>
 
