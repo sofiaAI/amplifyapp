@@ -36,12 +36,8 @@ class Event extends Component {
 
   playVideo(){
     var container = document.getElementsByClassName('video-container')[0]
-    if(container.style.display == "block"){
-      container.style.display = "none";
-    }else{
-      container.getElementsByClassName('video')[0].setAttribute("src", this.props.video);
-      container.style.display = "block";
-    }
+    container.getElementsByClassName('video-play')[0].setAttribute("src", this.props.video);
+    container.style.display = "block";
   }
 
   render() {
