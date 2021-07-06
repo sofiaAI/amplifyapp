@@ -1,5 +1,5 @@
 body{
-  background-image: url(../public/blue-gradient.jpeg);
+  background-image: url(../../public/blue-gradient.jpeg);
 }
 .events-container{
   height: 55vh;
@@ -29,3 +29,7 @@ body{
   width: 65vw;
   height: auto;
 }
+
+div.map-container  {
+   content : url(../../public/floor_plan.jpeg);
+}​
