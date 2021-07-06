@@ -20,7 +20,7 @@ body{
 
 .video-container{
   top: 10vh;
-  left: 10vw;
+  left: 4vw;
   width: 20vw;
   position: absolute;
   display : none;

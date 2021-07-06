@@ -44,28 +44,6 @@ function Api() {
   return (
     <body>
     <div className="api">
-      <NavBar/>
-      <input
-        onChange={e => setFormData({ ...formData, 'time': e.target.value})}
-        placeholder="Event time"
-        value={formData.time}
-      />
-      <input
-        onChange={e => setFormData({ ...formData, 'location': e.target.value})}
-        placeholder="Event location"
-        value={formData.location}
-      />
-      <input
-        onChange={e => setFormData({ ...formData, 'video': e.target.value})}
-        placeholder="Event video"
-        value={formData.video}
-      />
-      <input
-        onChange={e => setFormData({ ...formData, 'type': e.target.value})}
-        placeholder="Event type"
-        value={formData.type}
-      />
-      <button onClick={createEvent}>Create Event</button>
       <div className = "events-container">
         {
           events.map(event => (
@@ -82,16 +60,6 @@ function Api() {
         }
       </div>
 
-      <div className = "delete">
-        {
-          events.map(event => (
-            <div>
-            <p>{event.type, event.time}</p>
-            <button onClick={() => deleteEvent(event)}>Delete event</button>
-            </div>
-          ))
-        }
-      </div>
 
       <div className = "video-container">
         <video className = "video-play" controls loop src = "" type="video/mp4"> </video>
