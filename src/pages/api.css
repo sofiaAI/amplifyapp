@@ -30,6 +30,10 @@ body{
   height: auto;
 }
 
-div.map-container  {
-   content : url(../../public/floor_plan.jpeg);
+.map-container  {
+  top: 62vh;
+  left: 69.9vw;
+  width: 10vw;
+  position: absolute;
+  content : url(../../public/floor_plan.jpeg);
 }​
