@@ -24,11 +24,11 @@ class Event extends Component {
       var dropdownIcon = e.currentTarget.parentNode.getElementsByClassName('arrow-icon')[0];
       var dropdown = e.currentTarget.parentNode.getElementsByClassName('drop-down')[0];
       if(dropdown.style.display === "flex"){
-        e.currentTarget.style.display = "rgb(26, 52, 94)";
+        e.currentTarget.style.backgroundColor = "rgb(26, 52, 94)";
         dropdown.style.display = "none";
         dropdown.classList.remove('drop-down-menu-anim');
       }else{
-        e.currentTarget.style.display = "rgb(2, 126, 184)";
+        e.currentTarget.style.backgroundColor = "rgb(2, 126, 184)";
         void dropdown.offsetWidth;
         dropdown.classList.add('drop-down-menu-anim');
         dropdown.style.display = "flex";
