@@ -42,7 +42,6 @@ function Api() {
   }
 
   return (
-    <body>
     <NavBar/>
     <div className="api">
       <div className = "events-container">
@@ -72,7 +71,6 @@ function Api() {
 
     </div>
 
-    </body>
   );
 }
 
