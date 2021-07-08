@@ -11,7 +11,7 @@
 }
 
 .drop-down-button{
-  background-color: rgb(26, 52, 94);
+  background-color: rgb(39, 110, 143);
   color: white;
   width : 7.5vw;
   border-style: inset;
@@ -34,11 +34,9 @@
     height: 0;
     display: flex;
     color: transparent;
-    background-color: rgb(26, 52, 94);
   }
   100% {
     height: 4vw;
     color: white;
-    background-color: rgb(39, 110, 143);
   }
 }
