@@ -25,10 +25,12 @@ class Event extends Component {
       var dropdown = e.currentTarget.parentNode.getElementsByClassName('drop-down')[0];
       if(dropdown.style.display === "flex"){
         e.currentTarget.style.backgroundColor = "rgb(26, 52, 94)";
+        e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
         dropdown.style.display = "none";
         dropdown.classList.remove('drop-down-menu-anim');
       }else{
-        e.currentTarget.style.backgroundColor = "rgb(2, 126, 184)";
+        e.currentTarget.style.backgroundColor = "rgb(0, 99, 145)";
+        e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "white";
         void dropdown.offsetWidth;
         dropdown.classList.add('drop-down-menu-anim');
         dropdown.style.display = "flex";
