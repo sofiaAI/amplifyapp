@@ -7,6 +7,7 @@ import { listEvents } from '../graphql/queries';
 import { createEvent as createEventMutation, deleteEvent as deleteEventMutation } from '../graphql/mutations';
 import Event from '../components/Event.js';
 import NavBar from '../components/NavBar.js';
+import VideoBar from '../components/VideoBar.js';
 import "./api.css";
 import uniqid from 'uniqid'
 
@@ -61,7 +62,7 @@ function Api() {
         }
       </div>
 
-      <div className = "video-bar"> </div>
+      <VideoBar/>
 
       <div className = "video-container">
         <video className = "video-play" controls loop src = "" type="video/mp4"> </video>
