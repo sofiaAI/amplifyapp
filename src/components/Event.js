@@ -61,7 +61,8 @@ class Event extends Component {
       canvas.getContext('2d').drawImage(vid, 0, 0, canvas.width, canvas.height);
 
       const image = new Image();
-      image.src = canvas.toDataURL();
+      console.log(canvas.toDataURL());
+      image.src = canvas.toDataURL("image/jpeg");
       document.getElementById(this.props.id_).getElementsByClassName('video')[0].appendChild(image);
 
 
