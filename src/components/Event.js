@@ -16,6 +16,7 @@ class Event extends Component {
   constructor(props) {
     super(props);
     this.playVideo = this.playVideo.bind(this);
+    this.getScreenshot = this.getScreenshot.bind(this);
   }
 
   componentDidMount(){
@@ -24,13 +25,13 @@ class Event extends Component {
       var dropdownIcon = e.currentTarget.parentNode.getElementsByClassName('arrow-icon')[0];
       var dropdown = e.currentTarget.parentNode.getElementsByClassName('drop-down')[0];
       if(dropdown.style.display === "flex"){
-        dropdownIcon.style.content = "&#9650";
+        dropdownIcon.innerHTML = "▲";
         e.currentTarget.style.backgroundColor = "rgb(16, 44, 71)";
         e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
         dropdown.style.display = "none";
         dropdown.classList.remove('drop-down-menu-anim');
       }else{
-        dropdownIcon.style.content = "&#9660";
+        dropdownIcon.innerHTML = "▼";
         e.currentTarget.style.backgroundColor = "rgb(0, 99, 145)";
         e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "white";
         void dropdown.offsetWidth;
@@ -46,6 +47,23 @@ class Event extends Component {
     container.style.display = "block";
   }
 
+  /**
+   * Takes a screenshot from video.
+   * @param videoEl {Element} Video element
+   * @returns {Element} Screenshot image element
+   */
+  getScreenshot(videoEl) {
+      <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
+      const canvas = document.createElement("canvas");
+      canvas.width = videoEl.clientWidth;
+      canvas.height = videoEl.clientHeight;
+      canvas.getContext('2d').drawImage(videoEl, 0, 0, canvas.width, canvas.height);
+
+      const image = new Image()
+      image.src = canvas.toDataURL();
+      return image;
+  }
+
   render() {
     return (
       <div  id = {this.props.id_}>
@@ -56,8 +74,8 @@ class Event extends Component {
                     <p className = "location" > {this.props.location} </p>
                     <p className = "time" > {this.props.time} </p>
                 </div>
-                <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
-                <div className = "arrow-icon"> "&#9650" </div>
+                <div className = "video"></div>
+                <div className = "arrow-icon"> ▲ </div>
             </div>
           <div className = "drop-down">
               <button className = "drop-down-button" onClick = {this.playVideo}> Replay Clip </button>

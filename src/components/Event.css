@@ -70,6 +70,7 @@ single-event{
   width : 3vw;
   align-self: center;
   align-content: center;
+  text-align: center;
   order: 3;
   color: white;
 }
