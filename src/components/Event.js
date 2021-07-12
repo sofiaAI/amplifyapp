@@ -25,7 +25,7 @@ class Event extends Component {
       var dropdownIcon = e.currentTarget.parentNode.getElementsByClassName('arrow-icon')[0];
       var dropdown = e.currentTarget.parentNode.getElementsByClassName('drop-down')[0];
       if(dropdown.style.display === "flex"){
-        dropdownIcon.innerHTML = "q";
+        dropdownIcon.innerHTML = "▲";
         e.currentTarget.style.backgroundColor = "rgb(16, 44, 71)";
         e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
         dropdown.style.display = "none";
@@ -39,6 +39,7 @@ class Event extends Component {
         dropdown.style.display = "flex";
       }
     });
+    this.getScreenshot();
   }
 
   playVideo(){
@@ -48,9 +49,7 @@ class Event extends Component {
   }
 
   /**
-   * Takes a screenshot from video.
-   * @param videoEl {Element} Video element
-   * @returns {Element} Screenshot image element
+   * Creates a screenshot from the video in the event box
    */
   getScreenshot() {
       var video = document.createElement('video');
