@@ -25,7 +25,7 @@ class Event extends Component {
       var dropdownIcon = e.currentTarget.parentNode.getElementsByClassName('arrow-icon')[0];
       var dropdown = e.currentTarget.parentNode.getElementsByClassName('drop-down')[0];
       if(dropdown.style.display === "flex"){
-        dropdownIcon.innerHTML = "▲";
+        dropdownIcon.innerHTML = "q";
         e.currentTarget.style.backgroundColor = "rgb(16, 44, 71)";
         e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
         dropdown.style.display = "none";
@@ -52,16 +52,21 @@ class Event extends Component {
    * @param videoEl {Element} Video element
    * @returns {Element} Screenshot image element
    */
-  getScreenshot(videoEl) {
-      <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
-      const canvas = document.createElement("canvas");
-      canvas.width = videoEl.clientWidth;
-      canvas.height = videoEl.clientHeight;
-      canvas.getContext('2d').drawImage(videoEl, 0, 0, canvas.width, canvas.height);
+  getScreenshot() {
+      var video = document.createElement('video');
+      video.src = this.props.video;
+      video.type = "video/mp4";
 
-      const image = new Image()
+      const canvas = document.createElement("canvas");
+      canvas.width = video.clientWidth;
+      canvas.height = video.clientHeight;
+      canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+
+      const image = new Image();
       image.src = canvas.toDataURL();
-      return image;
+      document.getElementById(this.props.id_).getElementsByClassName('video')[0].appendChild(image);
+
+
   }
 
   render() {
