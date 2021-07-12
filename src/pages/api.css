@@ -16,8 +16,15 @@
 
 }
 
-.video-container{
+.video-bar{
   top: 10vh;
+  height: 4vh;
+  width: 15vw;
+  left: 4vw;
+}
+
+.video-container{
+  top: 15vh;
   left: 4vw;
   width: 20vw;
   position: absolute;

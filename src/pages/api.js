@@ -61,7 +61,7 @@ function Api() {
         }
       </div>
 
-
+      <div className = "video-bar"> </div>
 
       <div className = "video-container">
         <video className = "video-play" controls loop src = "" type="video/mp4"> </video>
