@@ -24,11 +24,13 @@ class Event extends Component {
       var dropdownIcon = e.currentTarget.parentNode.getElementsByClassName('arrow-icon')[0];
       var dropdown = e.currentTarget.parentNode.getElementsByClassName('drop-down')[0];
       if(dropdown.style.display === "flex"){
+        dropdownIcon.stye.content = \25B2;
         e.currentTarget.style.backgroundColor = "rgb(16, 44, 71)";
         e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
         dropdown.style.display = "none";
         dropdown.classList.remove('drop-down-menu-anim');
       }else{
+        dropdownIcon.stye.content = \25BC;
         e.currentTarget.style.backgroundColor = "rgb(0, 99, 145)";
         e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "white";
         void dropdown.offsetWidth;
@@ -55,7 +57,7 @@ class Event extends Component {
                     <p className = "time" > {this.props.time} </p>
                 </div>
                 <video className = "video" controls loop width="500" height="400" src= {this.props.video} type="video/mp4"> </video>
-                <p className = "arrow-icon"></p>
+                <div className = "arrow-icon"></div>
             </div>
           <div className = "drop-down">
               <button className = "drop-down-button" onClick = {this.playVideo}> Replay Clip </button>

@@ -19,7 +19,7 @@ code {
 
 :root {
   margin: 0;
-  --amplify-primary-color: #3ecde0;
+  --amplify-primary-color: rgb(73, 123, 204);
   --amplify-primary-tint: #ff7359;
   --amplify-primary-shade: #e0573e;
 }
