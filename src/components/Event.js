@@ -52,7 +52,7 @@ class Event extends Component {
    * Creates a screenshot from the video in the event box
    */
   getScreenshot() {
-      var vid = document.createElement('vid');
+      var vid = document.createElement('video');
       vid.src = this.props.video;
 
       const canvas = document.createElement("canvas");
