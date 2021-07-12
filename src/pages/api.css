@@ -17,10 +17,12 @@
 }
 
 .video-bar{
-  top: 10vh;
+  top: 9vh;
   height: 4vh;
-  width: 15vw;
+  width: 55vw;
   left: 4vw;
+  position: absolute;
+  background-color: rgba(21,19,35,.6882352941176471);
 }
 
 .video-container{
