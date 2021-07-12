@@ -9,11 +9,15 @@ class VideoBar extends Component {
     super(props);
   }
 
+  myFunction(){
+    alert("DARIUS WILL PAY");
+  }
+
   render() {
     return (
       <div className="video-options">
         <div className="video-bar">
-          <button className = "live-feed-ret" onclick = { () => alert("DARIUS WILL PAY")}>"DARIUS WILL PAY"</button>
+          <button className = "live-feed-ret" onclick = "myFunction()">"DARIUS WILL PAY"</button>
           <p className = "video-location"></p>
         </div>
         <div className = "return"></div>
