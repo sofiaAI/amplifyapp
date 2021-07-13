@@ -26,13 +26,13 @@
 .video-play{
   width: 65vw;
   height: auto;
-  display: "none";
+  display: none;
 }
 
 .live-stream {
   width: 65vw;
   height: 50vh;
-  display: "block";
+  display: block;
   background-color: white;
 }
 .map-container  {
