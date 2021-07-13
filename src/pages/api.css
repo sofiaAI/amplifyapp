@@ -21,7 +21,7 @@
   left: 4vw;
   width: fit-content;
   position: absolute;
-  display : none;
+  display : block;
 }
 .video-play{
   width: 65vw;
