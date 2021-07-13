@@ -17,7 +17,7 @@ class VideoBar extends Component {
     return (
       <div className="video-options">
         <div className="video-bar">
-          <button className = "live-feed-ret" onClick = {myFunction}></button>
+          <button className = "live-feed-ret" onClick = {this.myFunction}></button>
           <p className = "video-location"></p>
         </div>
         <div className = "return"></div>
