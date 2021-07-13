@@ -54,8 +54,8 @@ class Event extends Component {
   getScreenshot() {
       var vid = document.createElement('video');
       vid.setAttribute("src", this.props.video);
-	  vid.setAttribute('height', '50');
-      vid.setAttribute('width', '50');
+	  vid.setAttribute('height', 'auto');
+      vid.setAttribute('width', '110');
       
       console.log(vid);
       const canvas = document.createElement("canvas");

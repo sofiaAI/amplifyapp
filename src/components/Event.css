@@ -57,13 +57,13 @@ single-event{
 }
 
 .video{
-  background-color: #fff;
-  height: 50%;
-  width: 9vw;
+  height: fit-content;
+  width: fit-content;
   border-radius: 4px;
   position: relative;
   order: 2;
   align-self: center;
+  overflow: hidden;
 }
 
 .arrow-icon{
