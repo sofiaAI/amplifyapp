@@ -15,7 +15,7 @@ class NavBar extends Component {
     return (
       <nav className="NavBar-container">
         <div className="NavBar-linkContainer u-inlineBlock">
-          <AmplifySignOut buttonText= "⏻"></AmplifySignOut>
+          <AmplifySignOut buttonText= "Sign Out"></AmplifySignOut>
         </div>
       </nav>
     );

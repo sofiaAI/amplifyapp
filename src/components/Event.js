@@ -53,6 +53,7 @@ class Event extends Component {
    */
   getScreenshot() {
       var vid = document.createElement('video');
+      console.log(this.props.video);
       vid.setAttribute('src', this.props.video);
 	  vid.setAttribute('height', '50');
       vid.setAttribute('width', '50');
@@ -60,6 +61,7 @@ class Event extends Component {
       const canvas = document.createElement("canvas");
       canvas.width = vid.width;
       canvas.height = vid.height;
+      
       canvas.getContext('2d').drawImage(vid, 0, 0, canvas.width, canvas.height);
 
       const image = new Image();
