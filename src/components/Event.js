@@ -56,7 +56,7 @@ class Event extends Component {
       vid.setAttribute("src", this.props.video);
 	  vid.setAttribute('height', 'auto');
       vid.setAttribute('width', '110');
-      vid.setAttribute("id", "video-thumbnail");
+      vid.setAttribute("className", "video-thumbnail");
       
       document.getElementById(this.props.id_).getElementsByClassName('video')[0].appendChild(vid);
 
