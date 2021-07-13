@@ -19,15 +19,22 @@
 .video-container{
   top: 15vh;
   left: 4vw;
-  width: 20vw;
+  width: fit-content;
   position: absolute;
   display : none;
 }
 .video-play{
   width: 65vw;
   height: auto;
+  display: "none";
 }
 
+.live-stream {
+  width: 65vw;
+  height: 50vh;
+  display: "block";
+  background-color: white;
+}
 .map-container  {
   top: 62vh;
   left: 69.9vw;

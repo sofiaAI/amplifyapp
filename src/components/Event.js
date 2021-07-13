@@ -43,9 +43,18 @@ class Event extends Component {
   }
 
   playVideo(){
-    var container = document.getElementsByClassName('video-container')[0]
-    container.getElementsByClassName('video-play')[0].setAttribute("src", this.props.video);
-    container.style.display = "block";
+    var container = document.getElementsByClassName('video-container')[0];
+    var button = document.getElementsByClassName('live-feed-ret')[0];
+    var liveStream = container.getElementsByClassName('live-stream')[0];
+    var video = container.getElementsByClassName('video-play')[0];
+    
+    
+    liveStream.style.display = "none";
+    button.style.display = "block";
+    
+    video.setAttribute("src", this.props.video);
+    video.style.display = "block";
+    
   }
 
   /**
