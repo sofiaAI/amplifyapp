@@ -56,19 +56,9 @@ class Event extends Component {
       vid.setAttribute("src", this.props.video);
 	  vid.setAttribute('height', 'auto');
       vid.setAttribute('width', '110');
+      vid.setAttribute("id", "video-thumbnail");
       
-      console.log(vid);
-      const canvas = document.createElement("canvas");
-      canvas.width = vid.width;
-      canvas.height = vid.height;
-      
-      canvas.getContext('2d').drawImage(vid, 0, 0, canvas.width, canvas.height);
-
-      const image = new Image();
-      console.log(canvas.toDataURL());
-      image.src = canvas.toDataURL();
       document.getElementById(this.props.id_).getElementsByClassName('video')[0].appendChild(vid);
-
 
   }
 
