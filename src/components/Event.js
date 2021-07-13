@@ -53,11 +53,11 @@ class Event extends Component {
    */
   getScreenshot() {
       var vid = document.createElement('video');
-      console.log(this.props.video);
-      vid.setAttribute('src', this.props.video);
+      vid.setAttribute("src", this.props.video);
 	  vid.setAttribute('height', '50');
       vid.setAttribute('width', '50');
       
+      console.log(vid);
       const canvas = document.createElement("canvas");
       canvas.width = vid.width;
       canvas.height = vid.height;
@@ -67,7 +67,7 @@ class Event extends Component {
       const image = new Image();
       console.log(canvas.toDataURL());
       image.src = canvas.toDataURL();
-      document.getElementById(this.props.id_).getElementsByClassName('video')[0].appendChild(image);
+      document.getElementById(this.props.id_).getElementsByClassName('video')[0].appendChild(vid);
 
 
   }
