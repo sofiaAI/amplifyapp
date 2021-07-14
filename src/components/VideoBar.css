@@ -28,6 +28,9 @@
 
 .live-feed-ret{
   display: "block";
+  background-color: transparent;
+  border: 0;
+  color: white;
 }
 
 .video-bar-slide-anim{

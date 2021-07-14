@@ -23,7 +23,7 @@ class VideoBar extends Component {
     return (
       <div className="video-options">
         <div className = "return">
-        	<button className = "live-feed-ret" onClick = {this.resetBar}></button>
+        	<button className = "live-feed-ret" onClick = {this.resetBar}> ❮ </button>
         </div>
         <div className="video-bar">
           <p className = "video-location"></p>
