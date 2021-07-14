@@ -38,7 +38,7 @@ class Event extends Component {
 	  dropdown.classList.remove('drop-down-menu-anim');
 
     }else{
-      var all-dropdowns = document.getElementsByClassName('drop-down');
+      var allDropdowns = document.getElementsByClassName('drop-down');
       for(var dd in all-dropdowns){
       	dd.parentNode.getElementsByClassName('arrow-icon')[0].innerHTML = "▲";
         dd.parentNode.style.backgroundColor = "rgb(16, 44, 71)";
