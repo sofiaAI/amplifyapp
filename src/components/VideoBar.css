@@ -7,12 +7,22 @@
 .video-bar{
   top: 9vh;
   height: 4vh;
-  width: 55vw;
-  left: 4vw;
+  width: 56vw;
+  right: 40vw;
   position: absolute;
   background-color: rgba(21,19,35,.6882352941176471);
 }
 
 .live-feed-ret{
   display: "none";
+}
+
+.video-bar-slide-anim{
+  animation: slideRight 200ms ease-in-out forwards;
+}
+
+@keyframes slideRight {
+  100% {
+    width: 50vw;
+  }
 }

@@ -1,5 +1,5 @@
 @import "./DropDown.css";
-
+@import "./VideoBar.css";
 single-event{
   position: relative;
 }
@@ -57,7 +57,7 @@ single-event{
 }
 
 .video{
-  height: fit-content;
+  height: 8vh;
   width: fit-content;
   border-radius: 4px;
   position: relative;
@@ -79,3 +79,4 @@ single-event{
   color: white;
   font-size: 1.5vw;
 }
+

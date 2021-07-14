@@ -20,6 +20,7 @@ class Event extends Component {
   }
 
   componentDidMount(){
+  	//prepare elements with event listeners
     document.getElementById(this.props.id_).getElementsByClassName('standard-view')[0].addEventListener('click',
     function (e) {
       var dropdownIcon = e.currentTarget.parentNode.getElementsByClassName('arrow-icon')[0];
@@ -39,6 +40,8 @@ class Event extends Component {
         dropdown.style.display = "flex";
       }
     });
+    
+    //get thumbnails for events
     this.getScreenshot();
   }
 
@@ -48,12 +51,18 @@ class Event extends Component {
     var liveStream = container.getElementsByClassName('live-stream')[0];
     var video = container.getElementsByClassName('video-play')[0];
     
-    
+    //replay clip in video box
     liveStream.style.display = "none";
     button.style.display = "block";
     
     video.setAttribute("src", this.props.video);
     video.style.display = "block";
+    
+    //slide video bar to the right
+    var videoBar = document.getElementsByClassName('video-bar')[0];
+    void videoBar.offsetWidth;
+    videoBar.classList.add('video-bar-slide-anim');
+    
     
   }
 

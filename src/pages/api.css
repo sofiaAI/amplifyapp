@@ -2,7 +2,7 @@
 .events-container{
   height: 55vh;
   overflow: auto;
-  background-color: transparent;
+  background-color: #00000030;
   position: absolute;
   top: 7vh;
   margin-top: 2px;
@@ -31,7 +31,7 @@
 
 .live-stream {
   width: 65vw;
-  height: 50vh;
+  height: 65vh;
   display: block;
   background-color: white;
 }
