@@ -16,17 +16,17 @@ class VideoBar extends Component {
     var button = buttonContainer.getElementsByClassName('live-feed-ret')[0];
     
     videoBar.classList.remove('video-bar-slide-anim');
-    
+    buttonContainer.classList.remove('button-slide-anim');     
   }
 
   render() {
     return (
       <div className="video-options">
-        <div className="video-bar">
-          <p className = "video-location"></p>
-        </div>
         <div className = "return">
         	<button className = "live-feed-ret" onClick = {this.resetBar}></button>
+        </div>
+        <div className="video-bar">
+          <p className = "video-location"></p>
         </div>
       </div>
     );

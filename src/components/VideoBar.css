@@ -1,28 +1,51 @@
 
 .video-options{
-
+  top: 9vh;
+  height: 4vh;
   width: 65vw;
+  left: 4vw;
+  position: absolute;
 }
 
 .video-bar{
-  top: 9vh;
   height: 4vh;
   width: 56vw;
-  right: 40vw;
+  right: 9vw;
   position: absolute;
   background-color: rgba(21,19,35,.6882352941176471);
 }
 
+
+.return{
+  width: 6vw;
+  margin: 0px;
+  position: relative;
+  left: -6vw;
+  top: 1.5vh;
+  display: flex;
+  justify-content: center;
+}
+
 .live-feed-ret{
-  display: "none";
+  display: "block";
 }
 
 .video-bar-slide-anim{
-  animation: slideRight 200ms ease-in-out forwards;
+  animation: slideRight 400ms ease-in-out forwards;
 }
 
 @keyframes slideRight {
   100% {
     width: 50vw;
+  }
+}
+
+.button-slide-anim{
+  animation: buttonSlideRight 400ms ease-in-out forwards;
+}
+
+@keyframes buttonSlideRight {
+  100% {
+    left: 0vw;
   }
 }

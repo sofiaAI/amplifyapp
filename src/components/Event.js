@@ -63,7 +63,10 @@ class Event extends Component {
     void videoBar.offsetWidth;
     videoBar.classList.add('video-bar-slide-anim');
     
-    
+    //slide in button
+    var returnButton = document.getElementsByClassName('return')[0];
+    void returnButton.offsetWidth;
+    returnButton.classList.add('button-slide-anim');     
   }
 
   /**
