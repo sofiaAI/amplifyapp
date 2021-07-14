@@ -5,12 +5,14 @@
   width: 65vw;
   left: 4vw;
   position: absolute;
+  overflow: hidden;
 }
 
 .video-bar{
   height: 4vh;
   width: 56vw;
   right: 9vw;
+  top: 0;
   position: absolute;
   background-color: rgba(21,19,35,.6882352941176471);
 }
@@ -18,19 +20,20 @@
 
 .return{
   width: 6vw;
+  height: 4vh;
   margin: 0px;
   position: relative;
   left: -6vw;
-  top: 1.5vh;
+  top: 0vh;
   display: flex;
   justify-content: center;
 }
 
 .live-feed-ret{
-  display: "block";
   background-color: transparent;
   border: 0;
   color: white;
+  font-size: 2vw;
 }
 
 .video-bar-slide-anim{
