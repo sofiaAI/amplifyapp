@@ -39,14 +39,17 @@ class Event extends Component {
 
     }else{
       var allEvents = document.getElementsByClassName('single-event');
-      for(var event in allEvents){
-      	var dd = event.getElementsByClassName("drop-down")[0];
+      console.log(allEvents);
+      Array.from(allEvents).forEach((event) => {
+      	console.log(event);
+        var dd = event.getElementsByClassName("drop-down")[0];
       	event.getElementsByClassName('arrow-icon')[0].innerHTML = "▲";
         event.getElementsByClassName('standard-view')[0].style.backgroundColor = "rgb(16, 44, 71)";
         event.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
       	dd.style.display = "none";
 	  	dd.classList.remove('drop-down-menu-anim');
-      }
+
+	  });
       dropdownIcon.innerHTML = "▼";
       e.currentTarget.style.backgroundColor = "rgb(0, 99, 145)";
       e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "white";
