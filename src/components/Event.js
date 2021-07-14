@@ -67,6 +67,9 @@ class Event extends Component {
     var returnButton = document.getElementsByClassName('return')[0];
     void returnButton.offsetWidth;
     returnButton.classList.add('button-slide-anim');     
+    
+    document.getElementsByClassName('video-location')[0].innerHTML = "Recorded Event: Camera - " + {this.props.location};
+    
   }
 
   /**
@@ -80,7 +83,6 @@ class Event extends Component {
       vid.setAttribute("className", "video-thumbnail");
       
       document.getElementById(this.props.id_).getElementsByClassName('video')[0].appendChild(vid);
-
   }
 
   render() {

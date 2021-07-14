@@ -23,7 +23,8 @@ class VideoBar extends Component {
     
     //replay clip in video box
     liveStream.style.display = "block";
-    video.style.display = "none";     
+    video.style.display = "none";   
+    document.getElementsByClassName('video-location')[0].innerHTML = "Live Stream";
   }
 
   render() {
@@ -33,7 +34,7 @@ class VideoBar extends Component {
         	<button className = "live-feed-ret" onClick = {this.resetBar}> ❮ </button>
         </div>
         <div className="video-bar">
-          <p className = "video-location"></p>
+          <p className = "video-location">Live Stream</p>
         </div>
       </div>
     );
