@@ -27,23 +27,23 @@ class Event extends Component {
     this.getScreenshot();
   }
   
-  toggleDropDown(){
+  toggleDropDown(e){
   	var dropdownIcon = e.currentTarget.parentNode.getElementsByClassName('arrow-icon')[0];
-      var dropdown = e.currentTarget.parentNode.getElementsByClassName('drop-down')[0];
-      if(dropdown.style.display === "flex"){
-        dropdownIcon.innerHTML = "▲";
-        e.currentTarget.style.backgroundColor = "rgb(16, 44, 71)";
-        e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
-        dropdown.style.display = "none";
-        dropdown.classList.remove('drop-down-menu-anim');
-      }else{
-        dropdownIcon.innerHTML = "▼";
-        e.currentTarget.style.backgroundColor = "rgb(0, 99, 145)";
-        e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "white";
-        void dropdown.offsetWidth;
-        dropdown.classList.add('drop-down-menu-anim');
-        dropdown.style.display = "flex";
-      }
+    var dropdown = e.currentTarget.parentNode.getElementsByClassName('drop-down')[0];
+    if(dropdown.style.display === "flex"){
+      dropdownIcon.innerHTML = "▲";
+      e.currentTarget.style.backgroundColor = "rgb(16, 44, 71)";
+      e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
+      dropdown.style.display = "none";
+	  dropdown.classList.remove('drop-down-menu-anim');
+    }else{
+      dropdownIcon.innerHTML = "▼";
+      e.currentTarget.style.backgroundColor = "rgb(0, 99, 145)";
+      e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "white";
+      void dropdown.offsetWidth;
+      dropdown.classList.add('drop-down-menu-anim');
+      dropdown.style.display = "flex";
+    }
   }
   
 
