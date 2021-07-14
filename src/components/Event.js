@@ -40,9 +40,9 @@ class Event extends Component {
     }else{
       var allDropdowns = document.getElementsByClassName('drop-down');
       for(var dd in allDropdowns){
-      	dd.parentNode.getElementsByClassName('arrow-icon')[0].innerHTML = "▲";
-        dd.parentNode.style.backgroundColor = "rgb(16, 44, 71)";
-        dd.parentNode.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
+      	dd.parentElement.getElementsByClassName('arrow-icon')[0].innerHTML = "▲";
+        dd.parentElement.style.backgroundColor = "rgb(16, 44, 71)";
+        dd.parentElement.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
       	dd.style.display = "none";
 	  	dd.classList.remove('drop-down-menu-anim');
       }
