@@ -17,13 +17,18 @@ class Event extends Component {
     super(props);
     this.playVideo = this.playVideo.bind(this);
     this.getScreenshot = this.getScreenshot.bind(this);
+    this.toggleDropDown = this.toggleDropDown.bind(this);
   }
 
   componentDidMount(){
   	//prepare elements with event listeners
-    document.getElementById(this.props.id_).getElementsByClassName('standard-view')[0].addEventListener('click',
-    function (e) {
-      var dropdownIcon = e.currentTarget.parentNode.getElementsByClassName('arrow-icon')[0];
+    document.getElementById(this.props.id_).getElementsByClassName('standard-view')[0].addEventListener('click', this.toggleDropDown);
+    //get thumbnails for events
+    this.getScreenshot();
+  }
+  
+  toggleDropDown(){
+  	var dropdownIcon = e.currentTarget.parentNode.getElementsByClassName('arrow-icon')[0];
       var dropdown = e.currentTarget.parentNode.getElementsByClassName('drop-down')[0];
       if(dropdown.style.display === "flex"){
         dropdownIcon.innerHTML = "▲";
@@ -39,11 +44,8 @@ class Event extends Component {
         dropdown.classList.add('drop-down-menu-anim');
         dropdown.style.display = "flex";
       }
-    });
-    
-    //get thumbnails for events
-    this.getScreenshot();
   }
+  
 
   playVideo(){
     var container = document.getElementsByClassName('video-container')[0];
@@ -68,7 +70,7 @@ class Event extends Component {
     void returnButton.offsetWidth;
     returnButton.classList.add('button-slide-anim');     
     
-    document.getElementsByClassName('video-location')[0].innerHTML = "Recorded Event: Camera - " + {this.props.location};
+    document.getElementsByClassName('video-location')[0].innerHTML = "Recorded Event: Camera - " + this.props.location;
     
   }
 
