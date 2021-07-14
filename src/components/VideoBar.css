@@ -17,6 +17,15 @@
   background-color: rgba(21,19,35,.6882352941176471);
 }
 
+.video-location{
+  color: white;
+  height: 4vh;
+  top: 0;
+  width: fit-content;
+  margin: 0;
+  margin-left: 1vw;
+  vertical-align: middle;
+}
 
 .return{
   width: 6vw;

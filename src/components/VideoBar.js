@@ -34,7 +34,7 @@ class VideoBar extends Component {
         	<button className = "live-feed-ret" onClick = {this.resetBar}> ❮ </button>
         </div>
         <div className="video-bar">
-          <p className = "video-location">Live Stream</p>
+          <div className = "video-location">Live Stream</div>
         </div>
       </div>
     );
