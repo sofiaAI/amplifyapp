@@ -38,11 +38,12 @@ class Event extends Component {
 	  dropdown.classList.remove('drop-down-menu-anim');
 
     }else{
-      var allDropdowns = document.getElementsByClassName('drop-down');
-      for(var dd in allDropdowns){
-      	dd.parentElement.getElementsByClassName('arrow-icon')[0].innerHTML = "▲";
-        dd.parentElement.style.backgroundColor = "rgb(16, 44, 71)";
-        dd.parentElement.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
+      var allEvents = document.getElementsByClassName('single-event');
+      for(var event in allEvents){
+      	var dd = event.getElementsByClassName("drop-down")[0];
+      	event.getElementsByClassName('arrow-icon')[0].innerHTML = "▲";
+        event.getElementsByClassName('standard-view')[0].style.backgroundColor = "rgb(16, 44, 71)";
+        event.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
       	dd.style.display = "none";
 	  	dd.classList.remove('drop-down-menu-anim');
       }
