@@ -39,7 +39,7 @@ class Event extends Component {
 
     }else{
       var allDropdowns = document.getElementsByClassName('drop-down');
-      for(var dd in all-dropdowns){
+      for(var dd in allDropdowns){
       	dd.parentNode.getElementsByClassName('arrow-icon')[0].innerHTML = "▲";
         dd.parentNode.style.backgroundColor = "rgb(16, 44, 71)";
         dd.parentNode.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
