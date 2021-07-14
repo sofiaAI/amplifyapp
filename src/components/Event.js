@@ -36,7 +36,16 @@ class Event extends Component {
       e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
       dropdown.style.display = "none";
 	  dropdown.classList.remove('drop-down-menu-anim');
+
     }else{
+      var all-dropdowns = document.getElementsByClassName('drop-down');
+      for(var dd in all-dropdowns){
+      	dd.parentNode.getElementsByClassName('arrow-icon')[0].innerHTML = "▲";
+        dd.parentNode.style.backgroundColor = "rgb(16, 44, 71)";
+        dd.parentNode.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "rgb(73, 123, 204)";
+      	dd.style.display = "none";
+	  	dd.classList.remove('drop-down-menu-anim');
+      }
       dropdownIcon.innerHTML = "▼";
       e.currentTarget.style.backgroundColor = "rgb(0, 99, 145)";
       e.currentTarget.getElementsByClassName("event-info")[0].getElementsByClassName("type")[0].style.color = "white";
