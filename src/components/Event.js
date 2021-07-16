@@ -41,7 +41,6 @@ class Event extends Component {
       var allEvents = document.getElementsByClassName('single-event');
       console.log(allEvents);
       Array.from(allEvents).forEach((event) => {
-      	console.log(event);
         var dd = event.getElementsByClassName("drop-down")[0];
       	event.getElementsByClassName('arrow-icon')[0].innerHTML = "▲";
         event.getElementsByClassName('standard-view')[0].style.backgroundColor = "rgb(16, 44, 71)";
