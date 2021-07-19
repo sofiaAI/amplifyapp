@@ -3,7 +3,7 @@ import {Auth} from "aws-amplify";
 import "./CustomSignout.css";
 
 async function CustomSignout() {
-  async function signOut = (e) => {
+   const signOut = async (e) => {
       e.preventDefault();
       await Auth.signOut();
       window.location.reload();
