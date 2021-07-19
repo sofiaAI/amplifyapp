@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { AmplifySignOut } from '@aws-amplify/ui-react';
-import CustomSignout from "./CustonmSignout.js";
+import CustomSignout from "./CustomSignout.js";
 import Amplify, { Auth } from 'aws-amplify';
 import "./NavBar.css";
 
