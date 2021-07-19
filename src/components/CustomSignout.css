@@ -1,6 +1,5 @@
 .signout{
   background-color: #ffffff00;
-  background: url(../public/logout.png);
   color:  white;
   height: 7vh;
   width: 7vw;
@@ -12,4 +11,8 @@
 
 .btn:hover {
   background-position: right center; /* change the direction of the change here */
+}
+
+.logout-icon{
+  filter: invert(100%);
 }

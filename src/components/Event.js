@@ -39,7 +39,6 @@ class Event extends Component {
 
     }else{
       var allEvents = document.getElementsByClassName('single-event');
-      console.log(allEvents);
       Array.from(allEvents).forEach((event) => {
         var dd = event.getElementsByClassName("drop-down")[0];
       	event.getElementsByClassName('arrow-icon')[0].innerHTML = "▲";
