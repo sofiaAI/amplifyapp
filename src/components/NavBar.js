@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { AmplifySignOut } from '@aws-amplify/ui-react';
+import CustomSignout from "./CustonmSignout.js";
 import Amplify, { Auth } from 'aws-amplify';
 import "./NavBar.css";
 
@@ -15,7 +16,7 @@ class NavBar extends Component {
     return (
       <nav className="NavBar-container">
         <div className="NavBar-linkContainer u-inlineBlock">
-          <AmplifySignOut buttonText= "Sign Out"></AmplifySignOut>
+          <CustomSignout />
         </div>
       </nav>
     );

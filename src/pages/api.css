@@ -32,8 +32,10 @@
 .live-stream {
   width: 65vw;
   height: 65vh;
+  line-height: 65vh;
   display: block;
   background-color: white;
+  text-align: center;
 }
 .map-container  {
   top: 62vh;
