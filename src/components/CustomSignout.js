@@ -10,7 +10,7 @@ async function CustomSignout() {
    }
 
   return (
-     <button onClick={signOut} className = "signout" /button>
+     <button onClick={signOut} className = "signout"></button>
    );
 }
 
