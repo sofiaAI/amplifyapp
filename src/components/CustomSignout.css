@@ -1,3 +1,15 @@
 .signout{
-  background-color: rgb(16, 44, 71);
+  background-color: #ffffff00;
+  background: url(../public/logout.png);
+  color:  white;
+  height: 7vh;
+  width: 7vw;
+}
+
+.btn-4 {
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
 }

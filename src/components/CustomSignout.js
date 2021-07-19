@@ -2,15 +2,15 @@ import React from 'react'
 import {Auth} from "aws-amplify";
 import "./CustomSignout.css";
 
-function CustomSignout() {
+async function CustomSignout() {
   const signOut = (e) => {
       e.preventDefault();
-      Auth.signOut();
+      await Auth.signOut();
       window.location.reload();
    }
 
   return (
-     <button onClick={signOut} className = "signout"> Sign out </button>
+     <button onClick={signOut} className = "signout" /button>
    );
 }
 

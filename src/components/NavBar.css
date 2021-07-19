@@ -6,7 +6,7 @@
   position: absolute;
   width: 100%;
   height: 7vh;
-  background-color: #15132396;
+  background-image: linear-gradient(to right, #162d46 0%, #0e4f73 40%, #0e4f73 60% ,#162d46 100%);
 }
 
 .NavBar-title {

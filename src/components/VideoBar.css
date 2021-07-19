@@ -14,7 +14,7 @@
   right: 9vw;
   top: 0;
   position: absolute;
-  background-color: rgba(21,19,35,.6882352941176471);
+  background-image: linear-gradient(to right, #0e4f73 0%, #162d46 100%);
 }
 
 .video-location{
