@@ -44,8 +44,7 @@ function Api() {
 
   return (
     <>
-    <NavBar/>
-    <div className="api">
+      <NavBar/>
       <div className = "events-container">
         {
           events.map(event => (
@@ -60,20 +59,17 @@ function Api() {
             </div>
           ))
         }
-      </div>
+       </div>
 
       <VideoBar/>
 
       <div className = "video-container">
       	<div className = "live-stream">"LIVESTREAM GOES HERE"</div>
-      	
         <video className = "video-play" controls loop src = "" type="video/mp4"> </video>
       </div>
 
-      <div className = "map-container">
-      </div>
+      <div className = "map-container"> </div>
 
-    </div>
   </>
   );
 }
