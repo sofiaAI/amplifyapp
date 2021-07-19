@@ -2,16 +2,23 @@ import React from 'react'
 import {Auth} from "aws-amplify";
 import "./CustomSignout.css";
 
-async function CustomSignout() {
-   const signOut = async (e) => {
-      e.preventDefault();
-      await Auth.signOut();
-      window.location.reload();
-   }
 
-  return (
-     <button onClick={signOut} className = "signout"></button>
-   );
-}
+class CustomSignout extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+
+   	async signOut(e){
+     	e.preventDefault();
+     	await Auth.signOut();
+     	window.location.reload();
+   	}
+
+    render() {
+      return (
+        <button onClick={signOut} className = "signout"></button>
+      );
+    }
+  }
 
 export default CustomSignout;
