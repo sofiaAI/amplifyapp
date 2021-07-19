@@ -16,7 +16,7 @@ class CustomSignout extends React.Component {
 
     render() {
       return (
-        <button onClick={signOut} className = "signout"></button>
+        <button onClick={this.signOut} className = "signout"></button>
       );
     }
   }
