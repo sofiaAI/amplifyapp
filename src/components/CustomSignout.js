@@ -16,7 +16,7 @@ class CustomSignout extends React.Component {
 
     render() {
       return (
-        <button onClick={this.signOut} className = "signout"> <img src = "logout.png" alt = "HI" className = "logout-icon"/> </button>
+        <button onClick={this.signOut} className = "signout"> <img src = "./logout.png" alt = "HI" className = "logout-icon"/> </button>
       );
     }
   }
