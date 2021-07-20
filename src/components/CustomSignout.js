@@ -1,7 +1,7 @@
 import React from 'react'
 import {Auth} from "aws-amplify";
 import "./CustomSignout.css";
-
+import image from '../public/logout.png'
 
 class CustomSignout extends React.Component {
     constructor(props) {
@@ -16,7 +16,9 @@ class CustomSignout extends React.Component {
 
     render() {
       return (
-        <button onClick={this.signOut} className = "signout"> <img src = "./logout.png" alt = "HI" className = "logout-icon"/> </button>
+        <div onClick={this.signOut} className = "signout">
+        	<img src = {image} className = "logout-icon"/>
+        </div>
       );
     }
   }

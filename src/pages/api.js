@@ -62,9 +62,8 @@ function Api() {
        </div>
 
       <VideoBar/>
-      <img src = "../components/logout.png" />
       <div className = "video-container">
-      	<div className = "live-stream">"LIVESTREAM GOES HERE"</div>
+      	<div className = "live-stream">LIVESTREAM</div>
         <video className = "video-play" controls loop src = "" type="video/mp4"> </video>
       </div>
 

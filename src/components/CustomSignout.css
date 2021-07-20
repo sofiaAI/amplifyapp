@@ -2,7 +2,15 @@
   background-color: #ffffff00;
   color:  white;
   height: 7vh;
-  width: 7vw;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.signout:hover {
+  background-image: linear-gradient(transparent, #029fdc);
 }
 
 .btn-4 {
@@ -15,4 +23,6 @@
 
 .logout-icon{
   filter: invert(100%);
+  width: 3vw;
+  height:  4.5vh;
 }

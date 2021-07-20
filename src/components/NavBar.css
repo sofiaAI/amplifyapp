@@ -19,26 +19,7 @@
 }
 
 
-.NavBar-linkContainer {
+.signout-container {
   width: fit-content;
   float: right;
-}
-
-.NavBar-link,
-.NavBar-link:visited {
-  color: var(--white);
-  opacity: 0.6;
-  text-decoration: none;
-}
-
-.NavBar-link:hover {
-  opacity: 0.8;
-}
-
-.NavBar-link.NavBar-login {
-  opacity: 1;
-}
-
-.NavBar-link + .NavBar-link {
-  margin-left: var(--m);
 }

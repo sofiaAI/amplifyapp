@@ -15,7 +15,7 @@ class NavBar extends Component {
   render() {
     return (
       <nav className="NavBar-container">
-        <div className="NavBar-linkContainer u-inlineBlock">
+        <div className="signout-container">
           <CustomSignout />
         </div>
       </nav>
